@@ -1,0 +1,631 @@
+/* Default styles */
+html {
+    scroll-behavior: smooth;
+    font-size: 100%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* NAVBAR */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ECCD7D;
+    color: #fff;
+    padding: 0.8rem;
+    z-index: 1;
+}
+
+.logo img {
+    margin-left: 2rem;
+    width: 30%;
+    height: 30%;
+}
+
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-top: 1rem;
+}
+
+nav ul li {
+    margin: 0 1.5rem;
+}
+
+nav ul li a {
+    color: #335345;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+nav ul li a:hover {
+    color: #0e231a;
+}
+
+nav ul li a::after {
+    content: '';
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #0e231a;
+    transform: scaleX(0);
+}
+
+nav ul li a:hover::after {
+    transform: scaleX(0.3);
+    transition: 0.2s linear;
+}
+
+/* ini datambah for login. START */
+
+.sub-about {
+    display: flex;
+    position: absolute;
+    left: 98%;
+    bottom: 6%;
+    transform: translateX(-50%);
+    color: #335345;
+    list-style-type: none;
+
+}
+
+.submenu-about {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    background-size: 100%;
+    margin: 1.25rem 1.25rem;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.panah-bawah:hover .submenu-about {
+    display: inline-block;
+    transition: 1.s linear;
+}
+
+.akun {
+    display: flex;
+    position: absolute;
+    left: 94%;
+    transform: translateX(-50%);
+    padding-top: 1rem;
+    color: #335345;
+    size: 3rem;
+    list-style-type: none;
+}
+
+.dropdown .gambar-akun {
+    border: 3px solid #335345;
+    border-radius: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.1rem;
+}
+
+.dropdown .submenu {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.akun:hover .submenu {
+    display: inline-block;
+    transition: 1.s linear;
+
+}
+
+
+/* ini datambah for login. END */
+
+
+/* HERO SECTION */
+.carousel {
+    position: relative;
+    margin: auto;
+    margin-top: 5.2rem;
+}
+
+.carousel-container {
+    display: flex;
+    overflow: hidden;
+}
+
+.carousel-item {
+    flex: 0 0 100%;
+    max-width: 100%;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item img {
+    width: 100%;
+}
+
+.carousel-item video {
+    width: 100%;
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+@media screen and (min-width: 768px) {
+    .carousel-container {
+        max-width: 100%;
+    }
+}
+
+.section2 {
+    background-color: #3F5848;
+}
+
+/* PROMO */
+.promo {
+    background-color: #3F5848;
+    color: #ECCD7D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+}
+
+.container {
+    background-color: #3F5848;
+    display: flex;
+    justify-content: space-between;
+    padding: 2.5rem;
+    /* margin-left: 20px;
+    margin-bottom: 20px; */
+}
+
+.card {
+    background-color: #f2f2f2;
+    border-radius: 1.1rem;
+    box-shadow: 0 0 1.1rem rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.25rem;
+    margin-right: 1.25rem;
+    margin-bottom: 2.5rem;
+}
+
+.card h2 {
+    color: #3F5848;
+    font-size: 1.5rem;
+    /* margin-top: 20px;
+    margin-bottom: 10px; */
+}
+
+.card ul {
+    font-size: 1rem;
+    line-height: 1.5;
+
+}
+
+.card img {
+    border-radius: 1.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 70%;
+    transform: scale(1.0);
+    transition: transform 0.5s ease-in-out;
+}
+
+.card img:hover {
+    transform: scale(1.1);
+}
+
+
+/* MENU */
+.ourmenu {
+    padding-top: 4.2rem;
+    color: #3F5848;
+    text-align: center;
+}
+
+.menucontainer {
+    background-image: url('img/bg-menuuu.png');
+    background-position-y: 110%;
+    text-align: center;
+    padding-bottom: 3.1rem;
+}
+
+.menu {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.menu-item {
+    flex-basis: calc(33.33% - 20px);
+    height: 18.7rem;
+    margin-bottom: 1.25rem;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.175);
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.menu-item img {
+    border-radius: 0.6rem;
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    width: 14.1rem;
+    height: 18.7rem;
+    margin-bottom: 1.25rem;
+    transform: scale(1.0);
+    transition: transform 0.5s ease-in-out;
+}
+
+.menu-item img:hover {
+    transform: scale(1.1);
+}
+
+.menu-item h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.6rem;
+    color: black;
+}
+
+.menu-item p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #666;
+}
+
+.button a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3F5848;
+    color: #fff;
+    padding: 1.25rem 1.8rem;
+    border-radius: 80px;
+    width: 150px;
+    text-decoration: none;
+}
+
+.button :hover {
+    background-color: #fff;
+    color: #3F5848;
+    transition: background-color 0.5s ease;
+    transition: color 0.5s ease;
+}
+
+
+/* About */
+.about {
+    background-color: #335345;
+    text-align: left;
+    padding: 3rem;
+}
+
+.judulabout {
+    color: #ECCD7D;
+    font-weight: 700;
+}
+
+.isiabout {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.isiabout p {
+    color: #fff;
+    margin-left: 2.5rem;
+    text-align: left;
+}
+
+
+/* .isiabout video {
+    width: 47%;
+    padding-top: 57px;    
+} */
+
+.fotoabout {
+    padding-top: 1.3rem;
+    /* padding-bottom: 20px; */
+    color: #fff;
+    text-align: center;
+}
+
+.footprints {
+    width: 90%;
+    padding-top: 2.5rem;
+}
+
+
+/* NEWS */
+.news {
+    padding: 2.5rem;
+    background-color: #fff;
+    color: #3F5848;
+    text-align: left;
+    font-weight: 700;
+
+}
+
+.article1, .article2, .article3 {
+    background-color: #3F5848;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2.5rem;
+    margin-right: 9.3rem;
+    margin-left: 9.3rem;
+    padding: 0.6rem;
+}
+
+.article1 img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 16.8rem;
+    height: 21.25rem;
+}
+
+.article2 img {
+    width: 40%;
+    height: 40%;
+}
+
+.article3 img {
+    width: 65%;
+    height: 65%;
+}
+
+.artimg-container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: auto;
+    margin: 0.6rem;
+}
+
+.article1 h2, .article2 h2, .article3 h2 {
+    color: #ECCD7D;
+}
+
+.article1, .article2, .article3 p {
+    color: #fff;
+    font-weight: 300;
+    text-align: center;
+}
+
+
+
+/* CONTACT US */
+.contact {
+    background-color: #ECCD7D;
+    height: 100%;
+    /* width: 100%; */
+    display: flex;
+    /* margin-left: 5%;
+    margin-right: 5%; */
+    align-items: start;
+    text-align: left;
+    /* padding-top: 40px;
+    padding-bottom: 60px; */
+    padding: 5%;
+    padding-left: 10%;
+}
+
+.cus {
+    text-align: start;
+}
+
+.cus h2 {
+    color: #3F5848;
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+.cus p {
+    color: #335345;
+    font-weight: 400;
+}
+
+.form {
+    padding: 3.1rem;
+    padding-top: 10%;
+    margin-left: 10%;
+}
+
+form {
+    display: inline-block;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 200%;
+    padding: 1rem;
+    margin-bottom: 1.2rem;
+    border: none;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    border: 2px solid #3F5848;
+}
+
+.submitbtn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3F5848;
+    color: #fff;
+    padding: 1rem 1rem;
+    border-radius: 80px;
+    width: 9.3rem;
+    text-decoration: none;
+}
+
+.submitbtn:hover {
+    background-color: #f2f2f2;
+    color: #3F5848;
+    transition: background-color 0.5s ease;
+    transition: color 0.5s ease;
+}
+
+
+
+/* FOOTER */
+.foot {
+    border-bottom: 1px solid #fff;
+    background-color: #ECCD7D;
+    padding: 3%;
+    /* margin-left: 40px;
+    margin-right: 40px; */
+}
+
+.foot img {
+    margin-top: 1.25rem;
+    width: 10%;
+    height: 10%;
+}
+
+.kaki {
+    color: #3c5043;
+    display: flex;
+    justify-content: space-between;
+}
+
+.link {
+    display: flex;
+    justify-content: space-between;
+}
+
+.partner {
+    margin-right: 2.5rem;
+}
+
+.mailto {
+    text-decoration: none;
+    color: #3c5043;
+}
+
+.copyright {
+    background-color: #ECCD7D;
+    text-align: center;
+    padding: 1px;
+    font-size: smaller;
+    color: #3c5043;
+}
+
+
+/* Responsive styles */
+@media only screen and (max-width: 1280px) {
+    html {
+        font-size: 100%;
+    }
+
+    img {
+        max-width: 100%;
+
+    }
+
+    iframe {
+        max-width: 100%;
+
+    }
+
+    i {
+        max-width: 100%;
+        ;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    html {
+        font-size: 62.5%;
+    }
+
+    img {
+        max-width: 65%;
+
+    }
+
+    iframe {
+        max-width: 65%;
+
+    }
+
+    i {
+        max-width: 65%;
+    }
+
+    form {
+        max-width: 65%;
+    }
+
+
+
+}
+
+@media (max-width: 450px) {
+    html {
+        font-size: 55%;
+    }
+
+    img {
+        max-width: 45%;
+    }
+
+    iframe {
+        max-width: 45%;
+    }
+
+    .card ul li {
+        display: none;
+    }
+}

@@ -1,0 +1,364 @@
+html {
+  scroll-behavior: smooth;
+  font-size: 100%;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+}
+
+/* NAVBAR */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ECCD7D;
+  color: #fff;
+  padding: 0.8rem;
+  z-index: 1;
+}
+
+.logo img {
+  margin-left: 2rem;
+  width: 30%;
+  height: 30%;
+}
+
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-top: 1rem;
+}
+
+nav ul li {
+  margin: 0 1.5rem;
+}
+
+nav ul li a {
+  color: #335345;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+nav ul li a:hover {
+  color: #0e231a;
+}
+
+nav ul li a::after {
+  content: '';
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #0e231a;
+  transform: scaleX(0);
+}
+
+nav ul li a:hover::after {
+  transform: scaleX(0.3);
+  transition: 0.2s linear;
+}
+
+/* ini datambah for login. START */
+
+.sub-about {
+  display: flex;
+  position: absolute;
+  left: 98%;
+  bottom: 6%;
+  transform: translateX(-50%);
+  color: #335345;
+  list-style-type: none;
+
+}
+
+.submenu-about {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  background-size: 100%;
+  margin: 1.25rem 1.25rem;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.panah-bawah:hover .submenu-about {
+  display: inline-block;
+  transition: 1.s linear;
+}
+
+.akun {
+  display: flex;
+  position: absolute;
+  left: 94%;
+  transform: translateX(-50%);
+  padding-top: 0.8rem;
+  color: #335345;
+  size: 3rem;
+  list-style-type: none;
+}
+
+.dropdown .gambar-akun {
+  border: 3px solid #335345;
+  border-radius: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.1rem;
+  /* padding-top: 4px; */
+  /* margin: 0 32px; */
+
+
+
+}
+
+.dropdown .submenu {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.akun:hover .submenu {
+  display: inline-block;
+  transition: 1.s linear;
+
+}
+
+
+/* ini datambah for login. END */
+
+.banner {
+  padding-top: 5%;
+}
+
+.banner img {
+  max-width: 100%;
+}
+
+.nama{
+  display: block;
+  text-align: center;
+}
+
+.nama-pemesan {
+  display: inline;
+  gap: 1rem;
+}
+
+.nama-pemesan h1 {
+  text-align: center;
+  color: #335345;
+  font-size: 2rem;
+}
+
+label {
+  display: block;
+  margin-left: 2rem;
+  font-size: 1.5rem;
+}
+
+input[type="text"] {
+  width: 50%;
+  padding: 1rem 1rem;
+  border: 1px solid #335345;
+  border-radius: 10px;
+  margin-left: 2rem;
+}
+
+.menu {
+  color: #3F5848;
+  padding-top: 2rem;
+  text-align: center;
+  font-size: large;
+
+}
+
+.menu {
+  font-size: 1rem;
+}
+
+.pilihan-menu {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
+  padding: 2.5rem;
+
+}
+
+
+.menu-item img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+  transform: scale(1.0);
+  transition: transform 0.5s ease-in-out;
+}
+
+.menu-item img:hover {
+  transform: scale(1.1);
+}
+
+.menu-item {
+  border: 1px solid #3F5848;
+  border-radius: 10px;
+  padding: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-item h3 {
+  color: #3F5848;
+  text-align: center;
+  font-size: 2rem;
+
+}
+
+.menu-item p {
+  color: #3F5848;
+
+}
+
+/* .menu-item .harga-menu {
+  display:inline-flex;
+  gap:90px;
+} */
+.menu-item .harga-menu h4 {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.menu-item .harga-menu .tambah {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3F5848;
+  color: #fff;
+  padding: 1rem;
+  width: 100%;
+  border-radius: 3.5rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.menu-item .harga-menu .tambah:hover {
+  background-color: #ECCD7D;
+  color: #3F5848;
+  transform: background-color 0.7s ease;
+  transition: color 0.7s ease;
+}
+
+/* FOOTER */
+.foot {
+  border-bottom: 1px solid #fff;
+  background-color: #ECCD7D;
+  padding: 3%;
+  /* margin-left: 40px;
+  margin-right: 40px; */
+}
+
+.foot img {
+  margin-top: 20px;
+  width: 10%;
+  height: 10%;
+}
+
+.kaki {
+  color: #3c5043;
+  display: flex;
+  justify-content: space-between;
+}
+
+.link {
+  display: flex;
+  justify-content: space-between;
+}
+
+.partner {
+  margin-right: 3.4rem;
+}
+
+.mailto {
+  text-decoration: none;
+  color: #3c5043;
+}
+
+.copyright {
+  background-color: #ECCD7D;
+  text-align: center;
+  padding: 1px;
+  font-size: smaller;
+  color: #3c5043;
+}
+
+
+/* Responsive styles */
+@media only screen and (max-width: 1280px) {
+  html {
+    font-size: 100%;
+  }
+
+  img {
+    max-width: 100%;
+
+  }
+
+  iframe {
+    max-width: 100%;
+
+  }
+
+  i {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  img {
+    max-width: 65%;
+
+  }
+
+  iframe {
+    max-width: 65%;
+
+  }
+
+  i {
+    max-width: 65%;
+  }
+
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+
+  img {
+    max-width: 45%;
+  }
+
+  iframe {
+    max-width: 45%;
+  }
+}

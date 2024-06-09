@@ -1,0 +1,79 @@
+body {
+    font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      font-size: 100%;
+      background-color: #335345;
+  }
+
+
+  .container {
+    display: relative;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px;
+    margin-top:7%;
+    margin-left: 35%;
+    /* margin; */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .container h1, p{
+    text-align: center;
+    color: #335345;
+  }
+
+  .merk {
+    font-weight: bold;
+    color: #e3be61;
+  }
+
+  
+  form {
+    margin-top: 20px;
+  }
+  
+  label {
+    display: flex;
+    margin-bottom: 8px;
+    /* justify-content: center;
+    align-items: center; */
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    width:80%;
+    padding: 10px;
+    border: 1px solid #335345;
+    border-radius: 16px;
+    margin-bottom: 15px;
+  }
+  
+  input[type="submit"] { 
+    font-size: medium;
+    width: 40%;
+    padding: 10px;
+    background-color: #335345;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    color: #335345;
+    background-color: #e3c168;
+  }
+
+  .container .submit-btn {
+    align-items: center;
+    justify-content: center;
+    margin-left: 30%;
+    margin-bottom: 5%;
+    margin-top: 3%;
+  }
+  
